@@ -1,0 +1,104 @@
+:root {
+  --hero-color: rgb(47, 112, 104);
+  --default-light: #ffffff;
+  --default-mid: #aaa;
+  --default-button-shadow: 0px 3px 5px rgba(0, 0, 0, 0.23);
+}
+
+body {
+  background-color: #f4f4f4;
+  background: linear-gradient(to right, #7f7fd4, #86a7e7, #90eae4);
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: -1px;
+}
+
+h1 {
+  color: white;
+  filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+}
+
+.app {
+  background-color: var(--default-light);
+  font-size: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  box-shadow: var(--default-button-shadow);
+}
+
+#currentResult {
+  text-align: center;
+}
+
+.selectionEmoji {
+  font-size: 20rem;
+  margin: none;
+}
+
+.selections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.selections > * {
+  width: 45%;
+  border: 1px solid var(--default-mid);
+  border-radius: 0.5rem;
+}
+
+.selections h2,
+.selections p {
+  margin: 0;
+}
+
+#buttonGroup {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+button {
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: var(--hero-color);
+  border: 1px solid var(--hero-color);
+  border-radius: 0.5rem;
+  height: 2rem;
+  min-width: 20rem;
+  background-color: var(--default-light);
+  box-shadow: var(--default-button-shadow);
+}
+
+button:hover {
+  background-color: var(--hero-color);
+  color: var(--default-light);
+}
+
+button:disabled {
+  border-color: var(--default-mid);
+  background-color: white;
+  color: var(--default-mid);
+  box-shadow: none;
+}
+
+#overallResult {
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock paper scissors</title>
+  </head>
+  <body>
+    <h1>Rock! Paper! Scissors!</h1>
+    <div class="app">
+      <h2>Play your hand - what do you choose?</h2>
+      <p id="buttonGroup">
+        <button class="playButton" id="playButtonRock" data-played="rock">
+          Rock
+        </button>
+        <button class="playButton" id="playButtonPaper" data-played="paper">
+          Paper
+        </button>
+        <button
+          class="playButton"
+          id="playButtonScissors"
+          data-played="scissors"
+        >
+          Scissors
+        </button>
+      </p>
+      <p id="currentResult"></p>
+      <div class="selections">
+        <div>
+          <h3>You</h3>
+          <p class="selectionEmoji" id="playerSelection">🧑🏻</p>
+        </div>
+        <div>
+          <h3>Computer</h3>
+          <p class="selectionEmoji" id="computerSelection">🤖</p>
+        </div>
+      </div>
+      <p id="overallResult"></p>
+    </div>
+  </body>
+</html>
